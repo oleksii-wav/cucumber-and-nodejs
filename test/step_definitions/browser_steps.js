@@ -19,5 +19,3 @@ Then(/^Page title should (not )?be "([^"]*)"$/, async (notArg, title) => {
 When('I wait "{int}" seconds', (timeInSeconds) => {
   return browser.sleep(timeInSeconds * 1000)
 });
-
-When
