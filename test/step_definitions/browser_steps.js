@@ -3,15 +3,15 @@ const { expect } = require('chai');
 
 setDefaultTimeout(60000);
 
-When(/^I open epam.com$/, () => {
-  return browser.get('https://www.epam.com');
+When('I open {string} url', (url) => {
+  return browser.get(url);
 });
 
-Then(/^Page title should be 'EPAM | Enterprise Software Development, Design & Consulting'$/, async () => {
+Then(/^Page title should be "([^"]*)"$/, async (title) => {
   const pageTitle = await browser.getTitle();
-  expect(pageTitle).to.be.equal('EPAM | Enterprise Software Development, Design & Consulting');
+  expect(pageTitle).to.be.equal(title);
 });
 
-When(/^I wait 10 seconds$/, () => {
-  return browser.sleep(10000)
+When('I wait "{int}" seconds', (timeInSeconds) => {
+  return browser.sleep(timeInSeconds * 1000)
 });

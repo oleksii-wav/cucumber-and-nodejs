@@ -2,9 +2,14 @@
   {
     "keyword": "Feature",
     "name": "Home Page",
-    "line": 1,
+    "line": 2,
     "id": "home-page",
-    "tags": [],
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
     "uri": "test\\features\\home_page_title.feature",
     "elements": [
       {
@@ -15,7 +20,7 @@
         "tags": [
           {
             "name": "@smoke",
-            "line": 3
+            "line": 1
           }
         ],
         "type": "scenario",
@@ -24,38 +29,104 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "I open epam.com",
+            "name": "I open \"https://www.epam.com\" url",
             "match": {
               "location": "test\\step_definitions\\browser_steps.js:6"
             },
             "result": {
-              "status": "failed",
-              "duration": 17645000000,
-              "error_message": "WebDriverError: unknown error: net::ERR_NAME_NOT_RESOLVED\n  (Session info: chrome=107.0.5304.88)\n  (Driver info: chromedriver=107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}),platform=Windows NT 10.0.22000 x86_64)\n    at Object.checkLegacyResponse (D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\nFrom: Task: WebDriver.navigate().to(https://www.epam.com/)\n    at Driver.schedule (D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at Navigation.to (D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1133:25)\n    at Driver.get (D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\selenium-webdriver\\lib\\webdriver.js:988:28)\n    at ProtractorBrowser.get (D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\protractor\\built\\browser.js:653:32)\n    at World.<anonymous> (D:\\epam-courses\\cucumber-and-nodejs\\test\\step_definitions\\browser_steps.js:7:18)"
+              "status": "passed",
+              "duration": 10349000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "Page title should be 'EPAM | Enterprise Software Development, Design & Consulting'",
+            "name": "Page title should be \"EPAM | Enterprise Software Development, Design & Consulting\"",
             "match": {
               "location": "test\\step_definitions\\browser_steps.js:10"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 12000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "I wait 10 seconds",
+            "name": "I wait \"3\" seconds",
             "match": {
               "location": "test\\step_definitions\\browser_steps.js:15"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3008000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;check-title-of-home-page",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Check Title of Home Page",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I open \"http://bashorg.org/\" url",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4441000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Page title should be \"Bashorg.org - Лучший Цитатник Рунета - Башорг.орг\"",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I wait \"3\" seconds",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3002000000
             }
           },
           {
