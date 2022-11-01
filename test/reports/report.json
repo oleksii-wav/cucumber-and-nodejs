@@ -1,0 +1,77 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Home Page",
+    "line": 1,
+    "id": "home-page",
+    "tags": [],
+    "uri": "test\\features\\home_page_title.feature",
+    "elements": [
+      {
+        "id": "home-page;check-title-of-home-page",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Check Title of Home Page",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open epam.com",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4620000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Page title should be 'EPAM | Enterprise Software Development, Design & Consulting'",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I wait 10 seconds",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10002000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

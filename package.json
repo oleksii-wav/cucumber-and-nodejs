@@ -1,0 +1,29 @@
+{
+  "name": "cucumber-and-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor ./test/config/protractor.config.js",
+    "postinstall": "webdriver-manager update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleksii-wav/cucumber-and-nodejs.git"
+  },
+  "keywords": [
+    "DBB"
+  ],
+  "author": "Oleksii.F",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleksii-wav/cucumber-and-nodejs/issues"
+  },
+  "homepage": "https://github.com/oleksii-wav/cucumber-and-nodejs#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "cucumber": "^6.0.7",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "^6.2.1"
+  }
+}
