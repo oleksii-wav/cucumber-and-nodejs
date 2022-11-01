@@ -13,14 +13,18 @@
     "uri": "test\\features\\home_page_title.feature",
     "elements": [
       {
-        "id": "home-page;check-title-of-home-page",
+        "id": "home-page;check-title-epam",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Check Title of Home Page",
+        "line": 5,
+        "name": "Check Title EPAM",
         "tags": [
           {
             "name": "@smoke",
             "line": 1
+          },
+          {
+            "name": "@epam",
+            "line": 4
           }
         ],
         "type": "scenario",
@@ -28,40 +32,122 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 6,
             "name": "I open \"https://www.epam.com\" url",
             "match": {
               "location": "test\\step_definitions\\browser_steps.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 10349000000
+              "duration": 22084000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
+            "line": 7,
             "name": "Page title should be \"EPAM | Enterprise Software Development, Design & Consulting\"",
             "match": {
               "location": "test\\step_definitions\\browser_steps.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Page title should not be \"EPAM | Enterprise Software Development, Designs & Consulting\"",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
+            "line": 9,
             "name": "I wait \"3\" seconds",
             "match": {
-              "location": "test\\step_definitions\\browser_steps.js:15"
+              "location": "test\\step_definitions\\browser_steps.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 3008000000
+              "duration": 3007000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "home-page;check-title-bash",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Check Title Bash",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@bash",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I open \"http://bashorg.org/\" url",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1987000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Page title should be \"Bashorg.org - Лучший Цитатник Рунета - Башорг.орг\"",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I wait \"3\" seconds",
+            "match": {
+              "location": "test\\step_definitions\\browser_steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3002000000
             }
           },
           {
@@ -78,14 +164,18 @@
         ]
       },
       {
-        "id": "home-page;check-title-of-home-page",
+        "id": "home-page;check-title-of-medium",
         "keyword": "Scenario",
-        "line": 9,
-        "name": "Check Title of Home Page",
+        "line": 18,
+        "name": "Check Title of medium",
         "tags": [
           {
             "name": "@smoke",
             "line": 1
+          },
+          {
+            "name": "@medium",
+            "line": 17
           }
         ],
         "type": "scenario",
@@ -93,40 +183,40 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
-            "name": "I open \"http://bashorg.org/\" url",
+            "line": 19,
+            "name": "I open \"https://medium.com/\" url",
             "match": {
               "location": "test\\step_definitions\\browser_steps.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 4441000000
+              "duration": 1533000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
-            "name": "Page title should be \"Bashorg.org - Лучший Цитатник Рунета - Башорг.орг\"",
+            "line": 20,
+            "name": "Page title should be \"Medium – Where good ideas find you.\"",
             "match": {
               "location": "test\\step_definitions\\browser_steps.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 41000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 12,
+            "line": 21,
             "name": "I wait \"3\" seconds",
             "match": {
-              "location": "test\\step_definitions\\browser_steps.js:15"
+              "location": "test\\step_definitions\\browser_steps.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 3002000000
+              "duration": 3005000000
             }
           },
           {
@@ -137,7 +227,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
