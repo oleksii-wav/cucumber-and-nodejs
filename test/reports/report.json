@@ -26,11 +26,12 @@
             "line": 5,
             "name": "I open epam.com",
             "match": {
-              "location": "test\\step_definitions\\browser_steps.js:7"
+              "location": "test\\step_definitions\\browser_steps.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 4620000000
+              "status": "failed",
+              "duration": 17645000000,
+              "error_message": "WebDriverError: unknown error: net::ERR_NAME_NOT_RESOLVED\n  (Session info: chrome=107.0.5304.88)\n  (Driver info: chromedriver=107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}),platform=Windows NT 10.0.22000 x86_64)\n    at Object.checkLegacyResponse (D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\nFrom: Task: WebDriver.navigate().to(https://www.epam.com/)\n    at Driver.schedule (D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at Navigation.to (D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1133:25)\n    at Driver.get (D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\selenium-webdriver\\lib\\webdriver.js:988:28)\n    at ProtractorBrowser.get (D:\\epam-courses\\cucumber-and-nodejs\\node_modules\\protractor\\built\\browser.js:653:32)\n    at World.<anonymous> (D:\\epam-courses\\cucumber-and-nodejs\\test\\step_definitions\\browser_steps.js:7:18)"
             }
           },
           {
@@ -39,11 +40,10 @@
             "line": 6,
             "name": "Page title should be 'EPAM | Enterprise Software Development, Design & Consulting'",
             "match": {
-              "location": "test\\step_definitions\\browser_steps.js:11"
+              "location": "test\\step_definitions\\browser_steps.js:10"
             },
             "result": {
-              "status": "passed",
-              "duration": 16000000
+              "status": "skipped"
             }
           },
           {
@@ -52,11 +52,10 @@
             "line": 7,
             "name": "I wait 10 seconds",
             "match": {
-              "location": "test\\step_definitions\\browser_steps.js:16"
+              "location": "test\\step_definitions\\browser_steps.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 10002000000
+              "status": "skipped"
             }
           },
           {

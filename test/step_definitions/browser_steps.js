@@ -1,6 +1,5 @@
 const { Then, When, setDefaultTimeout } = require("cucumber")
 const { expect } = require('chai');
-const { browser } = require("protractor");
 
 setDefaultTimeout(60000);
 
