@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22084000000
+              "duration": 4509000000
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 8000000
             }
           },
           {
@@ -65,7 +65,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 7000000
             }
           },
           {
@@ -78,7 +78,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3007000000
+              "duration": 3000000000
             }
           },
           {
@@ -89,7 +89,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -121,7 +121,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1987000000
+              "duration": 2100000000
             }
           },
           {
@@ -158,7 +158,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -190,7 +190,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1533000000
+              "duration": 1393000000
             }
           },
           {
@@ -203,7 +203,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 43000000
             }
           },
           {
@@ -216,7 +216,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3005000000
+              "duration": 3003000000
             }
           },
           {
